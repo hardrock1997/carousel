@@ -1,23 +1,14 @@
-import logo from './logo.svg';
+import Carousel from './carousel';
+import image1 from './s1.png';
+import image2 from './s2.png';
 import './App.css';
+
+const images=[image1,image2];
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Carousel images={images}/>
     </div>
   );
 }
